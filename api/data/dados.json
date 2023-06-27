@@ -37,10 +37,17 @@
     },
     {
       "id": 6,
-      "nome": "Marcia Silva",
+      "nome": "Márcia Silva",
       "ativo": true,
-      "email": "m@m.com",
+      "email": "marcia@gmail.com",
       "role": 2
+    },
+    {
+      "nome": "Luiz",
+      "ativo": true,
+      "email": "luiz@gmail.com",
+      "role": 2,
+      "id": 1687822765268
     }
   ],
   "roles": [
