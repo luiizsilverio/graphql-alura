@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Ana Torre",
+      "ativo": true,
+      "email": "a@a.com",
+      "role": 1
+    },
+    {
+      "id": 2,
+      "nome": "Gabriel Costa",
+      "ativo": true,
+      "email": "g@g.com",
+      "role": 1
+    },
+    {
+      "id": 3,
+      "nome": "Flavia Lins",
+      "ativo": true,
+      "email": "f@f.com",
+      "role": 1
+    },
+    {
+      "id": 4,
+      "nome": "Carlos Marques",
+      "ativo": true,
+      "email": "c@c.com",
+      "role": 2
+    },
+    {
+      "id": 5,
+      "nome": "Silvia Souza",
+      "ativo": true,
+      "email": "s@s.com",
+      "role": 2
+    },
+    {
+      "id": 6,
+      "nome": "Márcia Silva",
+      "ativo": true,
+      "email": "marcia@gmail.com",
+      "role": 2
+    },
+    {
+      "nome": "Luiz",
+      "ativo": true,
+      "email": "luiz@gmail.com",
+      "role": 2,
+      "id": 1687822765268
+    },
+    {
+      "nome": "Cleison",
+      "ativo": true,
+      "email": "clei@gmail.com",
+      "role": 1,
+      "id": 1687991903525
+    },
+    {
+      "nome": "Felipe",
+      "ativo": true,
+      "email": "f.coimbra@gmail.com",
+      "role": 1,
+      "id": 1687993468726
+    },
+    {
+      "nome": "Caíque",
+      "ativo": true,
+      "email": "f.coimbra@gmail.com",
+      "role": 2,
+      "createdAt": "2023-06-28T00:00:00.000Z",
+      "id": 1687993559039
+    },
+    {
+      "nome": "Clóvis",
+      "ativo": true,
+      "email": "c.storani@gmail.com",
+      "role": 2,
+      "createdAt": "2023-06-28T00:00:00.000Z",
+      "id": 1687994035915
+    },
+    {
+      "nome": "Thiago",
+      "ativo": true,
+      "email": "t.leite@gmail.com",
+      "role": 3,
+      "id": 1687996590440
+    },
+    {
+      "nome": "Alex",
+      "ativo": true,
+      "email": "a.massa@gmail.com",
+      "role": 2,
+      "createdAt": "2023-06-28T00:00:00.000Z",
+      "id": 1687996852956
+    },
+    {
+      "nome": "Rodrigo",
+      "ativo": true,
+      "email": "r.monace@gmail.com",
+      "role": 1,
+      "id": 1687997560647,
+      "createdAt": "2023-06-28T00:00:00.000Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "type": "ESTUDANTE"
+    },
+    {
+      "id": 2,
+      "type": "DOCENTE"
+    },
+    {
+      "id": 3,
+      "type": "COORDENACAO"
+    }
+  ]
+}
