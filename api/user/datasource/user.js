@@ -23,32 +23,35 @@ class UsersAPI extends RESTDataSource {
         return user
     }
 
-    async addUser(user) {
-        user.id = Date.now();
+    async addUser(data) {
+        data.user.id = Date.now();
+        data.user.createdAt = data.createdAt;
 
-        const role = await this.get(`/roles?type=${user.role}`)
+        const role = await this.get(`/roles?type=${data.user.role}`)
 
         await this.post('users', {
-            ...user,
-            role: role[0].id
+            ...data.user,
+            role: role[0].id,
         })
 
         return ({
-            ...user,
+            ...data.user,
             role: role[0]
         })
     }
 
-    async updateUser (user) {
-        const role = await this.get(`/roles?type=${user.role}`)
+    async updateUser (data) {
+        const role = await this.get(`/roles?type=${data.user.role}`)
 
-        await this.put(`users/${user.id}`, {
-            ...user,
+        // a diferença entre put e patch é que put sobrepõe todos os campos,
+        // enquanto patch sobrepõe somente os campos informados.
+        await this.patch(`users/${data.id}`, {
+            ...data.user,
             role: role[0].id
         })
 
         return ({
-            ...user,
+            ...data.user,
             role: role[0]
         })
     }
